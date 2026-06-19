@@ -1,0 +1,46 @@
+from docx import Document
+
+doc = Document()
+doc.add_paragraph("Python Test Questions")
+
+# Question 1 (MCQ Single, plain text options)
+doc.add_paragraph("19. Four subjects - Physics, Chemistry, Mathematics and Biology - were taught in four consecutive periods of one hour each starting from 8.00 a.m. At what time was the Chemistry period scheduled?")
+doc.add_paragraph("Statements:")
+doc.add_paragraph("I. Mathematics period ended at 10.00 a.m., which was preceded by Biology.")
+doc.add_paragraph("II. Physics was scheduled in the last period.")
+doc.add_paragraph("III. Mathematics period was immediately followed by Chemistry.")
+doc.add_paragraph("Only I")
+doc.add_paragraph("Either I only or II only")
+doc.add_paragraph("Only II and III")
+doc.add_paragraph("Only I and either II or III")
+doc.add_paragraph("Correct Option : D")
+
+# Question 2 (Renewable Energy question - plain text options, Roman numerals)
+doc.add_paragraph("20. For renewable energy generation, the transmission links have to be more dispersed and going well into the interiors. The difference in gestation lag of renewable generation projects vis-a-vis transmission lines is a factor which has to be kept in mind. In fact, this is one of the major reasons why investments in renewable capacity have gone down.")
+doc.add_paragraph("I. While a solar plant can be set up in 6 months, a transmission line can take upto 24 months.")
+doc.add_paragraph("II. Land acquisition is easily available with no hinderances in India.")
+doc.add_paragraph("III. Renewable energy is abundantly available in our country in the form of maximum sunlight all the year around as geolocation of the country lies in between Tropic of Cancer and Tropic of Capricon.")
+doc.add_paragraph("Only I")
+doc.add_paragraph("I and II.")
+doc.add_paragraph("I and III.")
+doc.add_paragraph("All of I, II and III.")
+doc.add_paragraph("None of I, II and III.")
+doc.add_paragraph("Correct Option : A")
+
+# Question 3 (True or False)
+doc.add_paragraph("21. Python is an interpreted programming language.")
+doc.add_paragraph("A) True")
+doc.add_paragraph("B) False")
+doc.add_paragraph("Correct Answer: A")
+
+# Question 4 (Fill in the Blanks)
+doc.add_paragraph("22. Fill in the blank: The keyword used to define a function in Python is ________.")
+doc.add_paragraph("Correct Answer: def")
+
+# Question 5 (MCQ Multiple)
+doc.add_paragraph("23. Which of the following are programming languages?")
+doc.add_paragraph("(a) Python (b) HTML (c) C++ (d) CSS")
+doc.add_paragraph("Correct Option : A and C")
+
+doc.save("c:/Users/bathr/Documents/Project/Testportal/Quantitative Aptitude.docx")
+print("Saved Quantitative Aptitude.docx successfully!")
